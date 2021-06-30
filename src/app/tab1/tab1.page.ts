@@ -11,7 +11,7 @@ export class Tab1Page implements OnInit{
   tweets = [];
   segment = 'home';
   opts = {
-    slidesPerView: 3.5,
+    slidesPerView: 4.5,
     spaceBetween: 10,
     slidesOffsetBefore: 0
   };
