@@ -10,22 +10,22 @@
     </ion-title>
     <ion-buttons slot="end">
       <ion-button>
-        <ion-icon slot="icon-only" name="pulse-outline"></ion-icon>
+        <ion-icon name="sparkles"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
  
-<ion-segment [(ngModel)]="segment" mode="md" #segmentcontrol>
+<ion-segment [(ngModel)]="segment" mode="md">
   <ion-segment-button value="home">
     <ion-label>Home</ion-label>
   </ion-segment-button>
   <ion-segment-button value="content">
-    <ion-label>cr-content-suggest</ion-label>
+    <ion-label>Media</ion-label>
   </ion-segment-button>
 </ion-segment>
  
-<ion-content>
+<ion-content fullscreen="true">
   <div [hidden]="segment != 'home'">
     <!-- Story section at the top -->
     <ion-slides [options]="opts">
